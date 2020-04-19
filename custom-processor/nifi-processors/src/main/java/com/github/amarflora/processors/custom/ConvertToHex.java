@@ -39,7 +39,7 @@ public class ConvertToHex extends AbstractProcessor {
     static final PropertyDescriptor CONVERT_ATTRIBUTES = new PropertyDescriptor.Builder()
             .name("Convert NiFi attributes to HEX")
             .displayName("Convert comma separated attributes to hex")
-            .description("If true, specify the comma separated list of attributes to be converted. If false, it will convert the content.")
+            .description("If set to true, specify the comma separated list of attributes to be converted. If false, it will convert the content.")
             .required(true)
             .allowableValues("true", "false")
             .defaultValue("false")
