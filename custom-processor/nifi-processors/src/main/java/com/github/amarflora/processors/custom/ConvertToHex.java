@@ -58,12 +58,12 @@ public class ConvertToHex extends AbstractProcessor {
 
     static final Relationship REL_SUCCESS = new Relationship.Builder()
             .name("success")
-            .description("Successfully converted messages")
+            .description("Successfully converted message.")
             .build();
 
     static final Relationship REL_FAILURE = new Relationship.Builder()
             .name("failure")
-            .description("Failed to convert message")
+            .description("Failed to convert message. Kindly look at the logs.")
             .build();
 
     private static final Set<Relationship> RELATIONSHIPS = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(REL_SUCCESS, REL_FAILURE)));
