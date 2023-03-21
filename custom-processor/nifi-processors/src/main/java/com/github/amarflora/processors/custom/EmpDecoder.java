@@ -20,7 +20,7 @@ import java.time.DateTimeException;
 @EventDriven
 @SideEffectFree
 @SupportsBatching
-@Tags({"emp", "decode", "flowfile", "encode"})
+@Tags({"emp","decode", "flowfile", "encode"})
 @InputRequirement(InputRequirement.Requirement.INPUT_REQUIRED)
 @CapabilityDescription("Parses an incoming EMP message. The message is expected to be binary data or hex encoded binary data stored in the content of the flow file. Once parsed " +
         "the EMP header information is written as corresponding attributes. The payload of the EMP message is written directly as binary or hex encoded binary to the content of the flow file.")
